@@ -20,12 +20,14 @@
 
 /* ---------- 橫式主選單：文件快速連結（比照台電官網樣式） ---------- */
 .doc-nav { background: #ffffff; border-bottom: 1px solid var(--border); padding: 18px 0; }
-.doc-nav-grid { display: flex; flex-wrap: nowrap; gap: 8px; }
+.doc-nav-grid { display: flex; flex-wrap: nowrap; gap: 8px; align-items: stretch; }
 .doc-nav-grid a {
-  flex: 1 1 0; min-width: 0; text-align: center; padding: 12px 6px;
+  flex: 1 1 0; min-width: 0; text-align: center; padding: 10px 8px;
   background: var(--primary-light); border: 1px solid var(--border);
   border-radius: 999px; color: var(--primary); font-weight: 700; font-size: 12.5px;
-  line-height: 1.35; white-space: normal; word-break: keep-all;
+  line-height: 1.35; white-space: normal; word-break: normal; overflow-wrap: break-word;
+  display: flex; align-items: center; justify-content: center; text-align: center;
+  min-height: 46px;
   transition: background .15s ease, transform .15s ease;
 }
 .doc-nav-grid a:hover { background: #d7e9fa; transform: translateY(-2px); }
