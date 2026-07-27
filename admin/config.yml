@@ -23,4 +23,4 @@ collections:
               - { label: "類別", name: "tag", widget: "select", options: ["公告", "會議"] }
               - { label: "標題", name: "title", widget: "string" }
               - { label: "發布單位", name: "unit", widget: "string" }
-              - { label: "文件連結網址（選填）", name: "pdfUrl", widget: "string", required: false }
+              - { label: "文件附件（選填，可直接上傳PDF）", name: "pdfUrl", widget: "file", required: false, media_library: { config: { multiple: false } } }
